@@ -1,9 +1,12 @@
 import random
 import numpy as np
 import torch
+import requests
 from torch import nn
 
 strategy_name = 'Trust the PyTorch Neural Network'
+
+url = ''
 class ModelV1(nn.Module):
   def __init__(self, input_shape: int, output_shape: int):
     super().__init__()
